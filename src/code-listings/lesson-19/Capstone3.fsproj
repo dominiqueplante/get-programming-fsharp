@@ -59,15 +59,17 @@
     <Compile Include="Operations.fs" />
     <Compile Include="FileRepository.fs" />
     <Compile Include="Auditing.fs" />
-    <Compile Include="Program.fs" />
     <None Include="App.config" />
+    <Compile Include="Program.fs" />
+    <None Include="packages.config" />
     <None Include="Scratchpad.fsx" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <Reference Include="FSharp.Core, Version=4.7.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>packages\FSharp.Core.4.7.2\lib\net45\FSharp.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
